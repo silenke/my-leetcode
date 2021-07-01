@@ -62,7 +62,7 @@ public:
 	}
 
 	bool unique() const noexcept {
-		return !ptr_ || count_->count() == 1;
+		return count() == 1;
 	}
 
 	long count() const noexcept {
